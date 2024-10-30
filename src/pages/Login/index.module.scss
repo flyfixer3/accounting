@@ -1,0 +1,35 @@
+@import 'src/assets/styles/colors.scss';
+
+.loginContainer {
+  height: 100vh;
+  position: relative;
+}
+
+.loginFormWrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  padding: 0 3rem;
+}
+
+.loginForm {
+  width: 100%;
+}
+
+.loginWelcomeTxt {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: $blue60;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  line-height: 1.7;
+  span {
+    font-size: 1.5rem;
+    background-color: $blue10;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+}

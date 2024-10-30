@@ -1,0 +1,48 @@
+@import 'src/assets/styles/_colors.scss';
+
+.tableMetaWrapper {
+  background-color: $blue10;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid $blue20;
+}
+
+.tableMetaTotalTxt {
+  color: $blue60;
+  font-weight: 500;
+}
+
+.actionColumnDetailBtn {
+  background-color: $blue10;
+  border-color: $blue10;
+  border-radius: 4px;
+}
+.actionColumnDetailBtnDisabled {
+  background-color: $neutral20;
+  border-color: $neutral20;
+  border-radius: 4px;
+}
+
+.actionColumnDetailTxt {
+  margin-left: 4px;
+  font-size: 14px;
+  color: $blue70;
+  font-weight: 500;
+}
+.actionColumnDetailTxtDisabled {
+  margin-left: 4px;
+  font-size: 14px;
+  color: $neutral70;
+  font-weight: 500;
+}
+
+.moreActionWrapper {
+  background-color: $blue10;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4px;
+  cursor: pointer;
+}

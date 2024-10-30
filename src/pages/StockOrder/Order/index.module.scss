@@ -1,0 +1,144 @@
+@import 'src/assets/styles/_colors.scss';
+
+.orderListSectionWrapper {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+// item
+.itemWrapper {
+  position: relative;
+}
+
+.itemStatusWrapper {
+  position: absolute;
+  top: 0;
+  margin: 0.5rem;
+
+  border-radius: 6px;
+  padding: 4px 0.5rem;
+  div {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
+.itemOutOfStockStatusWrapper {
+  background-color: $neutral20;
+  div {
+    color: $neutral70;
+  }
+}
+
+.itemAlmostOutOfStockStatusWrapper {
+  background-color: $yellow10;
+  div {
+    color: $yellow70;
+  }
+}
+
+.itemWrapper_disabled {
+  background-color: $neutral20;
+  border: 1px solid $neutral30;
+}
+
+.itemWordingWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.itemType {
+  font-size: 14px;
+  font-weight: 400;
+  color: $neutral50;
+  margin-bottom: 4px;
+}
+
+.itemTitle {
+  font-weight: 600;
+  color: $blue70;
+  text-align: center;
+}
+
+.itemTitle_disabled {
+  font-weight: 600;
+  color: $neutral50;
+}
+
+.itemPrice {
+}
+
+.itemPrice_disabled {
+  color: $neutral50;
+}
+
+//
+
+// cart
+.drawerBody {
+  padding: 1.2rem !important;
+}
+
+.emptyTitle {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.emptyDesc {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 250px;
+  margin: auto;
+}
+
+.cartItemsWrapper {
+  // height: 100px;
+  // overflow-y: auto;
+}
+
+.cartItemWrapper {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.cartItemTitle {
+  font-weight: 500;
+}
+
+.cartItemDesc {
+  font-size: 14px;
+  margin-top: 4px;
+  color: $neutral70;
+}
+//
+
+// modal checkout
+.modalCheckoutTitle {
+  font-weight: 600;
+  text-align: center;
+}
+.modalCheckoutDesc {
+  text-align: center;
+  font-size: 14;
+  span {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+//

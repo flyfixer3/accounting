@@ -1,0 +1,107 @@
+@import 'src/assets/styles/colors.scss';
+
+.sidebarContainer {
+  padding: 1rem 0;
+  border-right: 1px solid $neutral20;
+}
+
+.contentLayoutContainer {
+  margin-left: 240;
+  height: '100vh';
+}
+
+.contentContainer {
+  margin: 1.5rem 1rem 0;
+  overflow: initial;
+  background-color: $neutral0;
+}
+
+.menuContainer {
+  background-color: $neutral0;
+  padding: 0 14px;
+  border-inline-end: none !important;
+  height: calc(100vh - 140px - 104px);
+  overflow-y: auto;
+}
+
+.sidebarHeaderContainer {
+  padding: 1rem 14px 1rem;
+  background-color: $neutral0;
+
+  border-bottom: 1px;
+  border-bottom-style: dashed;
+  border-bottom-color: $neutral30;
+  margin-bottom: 1rem;
+}
+
+.sidebarFooterContainer {
+  padding: 1rem 14px 1rem;
+  background-color: $neutral0;
+
+  border-top: 1px;
+  border-top-style: dashed;
+  border-top-color: $neutral30;
+}
+
+.username {
+  font-weight: 500;
+  color: $blue100;
+  margin-bottom: 2px;
+}
+
+.email {
+  color: $neutral60;
+  font-size: 14px;
+}
+
+.username,
+.email {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 0.5rem;
+}
+
+.imgWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+.footerMenu {
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  &:hover {
+    background-color: $blue10;
+  }
+}
+
+.footerMenuTxt {
+  color: $blue60;
+  margin-left: 0.5rem;
+
+  font-weight: 500;
+}
+
+.headerContainer {
+  background-color: $neutral0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.toggleMenuContainer {
+  background-color: $blue10;
+  padding: 0.5rem;
+  border-radius: 4px;
+  display: flex;
+  margin-right: 1rem;
+  cursor: pointer;
+}

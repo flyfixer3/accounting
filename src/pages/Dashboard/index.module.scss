@@ -1,0 +1,15 @@
+@import 'src/assets/styles/_colors.scss';
+
+.studentItem {
+  background-color: $neutral10;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  padding: 0.5rem 10px;
+  cursor: pointer;
+}
+
+.studentItemDesc {
+  font-size: 12px;
+  font-weight: 500;
+  color: $blue70;
+}

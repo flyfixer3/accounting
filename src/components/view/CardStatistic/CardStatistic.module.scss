@@ -1,0 +1,38 @@
+@import 'src/assets/styles/_colors.scss';
+
+.cardStatisticContainer {
+  background-color: $neutral0;
+  border-radius: 0.5rem;
+  padding: 1.5rem 1rem;
+  border: 1px solid $neutral20;
+}
+
+.cardStatisticContainerActive {
+  border: 1px solid $blue50;
+  background-color: $blue10;
+}
+
+.cardStatisticValue {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $blue100;
+}
+
+.cardStatisticValueActive {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $blue70;
+}
+
+.cardStatisticTitle {
+  font-size: 14px;
+  color: $neutral70;
+  margin-top: 0.5rem;
+}
+
+.cardStatisticTitleActive {
+  font-size: 14px;
+  color: $blue90;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,336 @@
+// @import './colors.module';
+
+@import './fonts';
+@import './colors';
+@import 'antd/dist/reset.css';
+
+* {
+  font-family: 'Museo Sans';
+  // overflow-x: hidden;
+  font-size: 16px;
+}
+
+// sidebar nav
+.ant-menu-item,
+.ant-menu-submenu-title {
+  margin-bottom: 8px !important;
+  color: $neutral60 !important;
+  font-weight: 500;
+  padding-left: 18px !important;
+}
+
+.ant-menu-item-selected {
+  background-color: $blue10 !important;
+  color: $blue60 !important;
+}
+
+.ant-menu-title-content {
+  font-size: 14px !important;
+}
+
+.ant-menu .ant-menu-sub {
+  .ant-menu-item {
+    padding-left: 18px !important;
+  }
+}
+
+//---
+
+.ant-modal-confirm-btns {
+  .ant-btn {
+    height: 32px !important;
+  }
+}
+
+.ant-btn {
+  height: 38px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  &-primary {
+    background-color: $blue60;
+  }
+}
+
+.ant-breadcrumb-link {
+  display: flex;
+  a {
+    font-size: 16px;
+    font-weight: 500;
+    color: $neutral50;
+    &.link-active {
+      color: $blue60 !important;
+    }
+  }
+}
+
+.ant-notification {
+}
+
+.ant-drawer-body {
+  padding: 0.5rem 0 !important;
+  overflow: hidden;
+}
+
+.ant-table-content {
+  overflow-x: auto;
+}
+
+// custom antd
+
+.antd-custom-input {
+  .ant-input-affix-wrapper,
+  .ant-input-group-addon {
+    min-height: 38px;
+    border: 1px solid $neutral20;
+  }
+
+  .ant-input-group-addon > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 1px solid $neutral20;
+  }
+}
+
+.ant-select-single,
+.ant-picker {
+  width: 100%;
+  height: 38px;
+}
+
+.ant-select-selector {
+  width: 100%;
+  min-height: 38px !important;
+}
+
+.ant-input-group > .ant-input-group-addon,
+.ant-input-group > .ant-input {
+  height: 38px;
+}
+
+.ant-form-item-control-input-content > input {
+  height: 38px;
+}
+
+.ant-form-item-explain {
+  &-error {
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+  }
+}
+
+// global
+
+.text-color-error {
+  color: $red70 !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-error {
+  color: $red70 !important;
+  font-size: 14px;
+}
+
+.status-badge {
+  padding: 4px 0.5rem;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+
+  &.redemeed,
+  &.sold,
+  &.received_by_tc,
+  &.current {
+    background-color: $blue10;
+    color: $blue70;
+  }
+
+  &.active,
+  &.paid,
+  &.available,
+  &.accepted,
+  &.approved,
+  &.complete,
+  &.passed {
+    background-color: $green10;
+    color: $green70;
+  }
+
+  &.inactive,
+  &.unpaid,
+  &.out_of_stock,
+  &.expired,
+  &.rejected,
+  &.damaged,
+  &.incomplete {
+    background-color: $red10;
+    color: $red70;
+  }
+
+  &.partial_paid,
+  &.pending,
+  &.waiting_confirmation {
+    background-color: $yellow10;
+    color: $yellow70;
+  }
+}
+
+.teacher-status-badge {
+  padding: 4px 0.5rem;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+
+  &.active {
+    background-color: $green10;
+    color: $green70;
+  }
+
+  &.resign {
+    background-color: $red10;
+    color: $red70;
+  }
+
+  &.inactive {
+    background-color: $orange10;
+    color: $orange70;
+  }
+}
+
+.book-status-badge {
+  padding: 4px 0.5rem;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+
+  &.available {
+    background-color: $green10;
+    color: $green70;
+  }
+
+  &.taken {
+    background-color: $blue10;
+    color: $blue70;
+  }
+
+  &.damaged {
+    background-color: $red10;
+    color: $red70;
+  }
+}
+
+.salary-status-badge {
+  padding: 4px 0.5rem;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+
+  &.paid {
+    background-color: $green10;
+    color: $green70;
+  }
+
+  &.confirmed {
+    background-color: $blue10;
+    color: $blue70;
+  }
+
+  &.pending {
+    background-color: $red10;
+    color: $red70;
+  }
+}
+
+.confirmation-modal-content-wrapper {
+  font-size: 14px;
+  span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.detail-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $blue70;
+}
+
+.section-title-primary {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: $blue70;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: $neutral90;
+  margin-bottom: 0.5rem;
+}
+
+.add-section-title {
+  color: $neutral100;
+  font-weight: 500;
+  font-size: 29px;
+}
+
+.link-title {
+  cursor: pointer;
+  color: $blue70;
+}
+
+.clickable-wrapper {
+  cursor: pointer;
+}
+
+.text-normal {
+  font-size: 14px;
+  span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.emptyTitle {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.emptyDesc {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 250px;
+  margin: auto;
+}
+
+// print
+@media print {
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+  @page {
+    margin: 0;
+  }
+
+  body {
+    margin: 0mm;
+  }
+}
